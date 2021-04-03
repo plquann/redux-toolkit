@@ -5,7 +5,7 @@ import { removePhoto } from 'features/Photo/photoSlice';
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useHistory } from 'react-router-dom';
-
+import './MainPage.scss';
 
 MainPage.propTypes = {};
 
@@ -13,7 +13,7 @@ function MainPage(props) {
     const photos = useSelector(state => state.photos);
     const dispatch = useDispatch()
     const history = useHistory();
-    console.log("🚀 ~ photos", photos);
+    // console.log("🚀 ~ photos", photos);
 
     const handlePhotoEditClick = (photo) => {
         console.log('Photo clicked: ', photo);
@@ -37,7 +37,7 @@ function MainPage(props) {
 
             <div className="container text-center">
                 <div className="py-5">
-                    <Link to="/photos/add">Add new photo</Link>
+                    <Link to="/photos/add" className="add--photo">Add new photo</Link>
                 </div>
 
                 <PhotoList

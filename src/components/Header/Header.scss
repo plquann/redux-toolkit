@@ -1,6 +1,7 @@
 .header {
     padding: 1rem 0;
     font-size: 1.25rem;
+    background-color:#ebebeb;
   
     &__title {
       font-weight: bold;
@@ -13,7 +14,7 @@
       &--active,
       &:hover {
         text-decoration: none;
-        color: var(--primary);
+        color: #000;
       }
     }
   }

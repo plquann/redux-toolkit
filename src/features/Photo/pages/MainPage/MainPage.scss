@@ -1,0 +1,38 @@
+.add--photo {
+  background-color: #004a7f;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  border: none;
+  color:white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial;
+  font-size: 20px;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  
+  animation: glowing 1500ms infinite;
+  &:hover {
+    color: rgb(100, 90, 90);
+    text-decoration: none;
+  }
+}
+
+
+
+@keyframes glowing {
+  0% {
+    background-color: #c57315;
+    -webkit-box-shadow: 0 0 3px #0f1b19;
+  }
+  50% {
+    background-color: #c57315;
+    -webkit-box-shadow: 0 0 40px #0f1b19;
+  }
+  100% {
+    background-color: #c57315;
+    -webkit-box-shadow: 0 0 3px #0f1b19;
+  }
+}

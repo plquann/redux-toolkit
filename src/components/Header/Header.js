@@ -10,17 +10,6 @@ function Header() {
             <div className="container">
                 <div className="row text-center">
                     <div className="col-6" >
-                        <a
-                            className="header__link header__title"
-                            href="https://github.com/quankhs"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Photo App
-                        </a>
-                    </div>
-
-                    <div className="col-6" >
                         <NavLink
                             exact
                             className="header__link"
@@ -28,6 +17,17 @@ function Header() {
                             activeClassName="header__link--active"
                         >
                             Redux Project
+                        </NavLink>
+                    </div>
+
+                    <div className="col-6" >
+                        <NavLink
+                            exact
+                            className="header__link"
+                            to="/signin"
+                            activeClassName="header__link--active"
+                        >
+                            Sign In
                         </NavLink>
                     </div>
                 </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Route, Switch, useParams, useRouteMatch } from 'react-router-dom';
+import { Route, Switch, useRouteMatch } from 'react-router-dom';
 import NotFound from '../../components/NotFound/NotFound';
 import AddEdit from './pages/AddEdit/AddEdit';
 import MainPage from './pages/MainPage/MainPage';
